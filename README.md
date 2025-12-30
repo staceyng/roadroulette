@@ -1,10 +1,6 @@
 # Road Roulette
 
-A quick and fun way to assign seats for different cars during road trips.Road Roulette handles the randomization for you!
-
-## Description
-
-Road Roulette app automatically generates random seat assignments, making the process faster and more efficient.
+A quick and fun way to assign seats for different cars during road trips. Road Roulette handles the randomization for you!
 
 ## Features
 
