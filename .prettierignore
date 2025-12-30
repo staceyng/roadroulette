@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+*.min.js
+*.min.css
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Version control
+.git/
+.svn/
+.hg/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Documentation (if you don't want to format it)
+# docs/
+# *.md
+
+# Compiled files
+*.compiled.js
+*.bundle.js
+
+# Public/static assets (if you don't want to format them)
+# public/
+# static/
+
+# Generated files
+# Add any auto-generated files here

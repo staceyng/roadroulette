@@ -1,36 +1,36 @@
-import { useState } from 'react'
-import './App.css'
-import CarInput from './components/CarInput'
-import TravelerInput from './components/TravelerInput'
-import AssignmentDisplay from './components/AssignmentDisplay'
-import { Car, Traveler, Assignment } from './types'
-import { assignRoles as assignRolesUtil } from './utils/assignmentLogic'
+import { useState } from "react";
+import "./App.css";
+import CarInput from "./components/CarInput";
+import TravelerInput from "./components/TravelerInput";
+import AssignmentDisplay from "./components/AssignmentDisplay";
+import { Car, Traveler, Assignment } from "./types";
+import { assignRoles as assignRolesUtil } from "./utils/assignmentLogic";
 
 function App() {
-  const [cars, setCars] = useState<Car[]>([])
-  const [travelers, setTravelers] = useState<Traveler[]>([])
-  const [assignments, setAssignments] = useState<Assignment[] | null>(null)
-  const [error, setError] = useState<string>('')
+  const [cars, setCars] = useState<Car[]>([]);
+  const [travelers, setTravelers] = useState<Traveler[]>([]);
+  const [assignments, setAssignments] = useState<Assignment[] | null>(null);
+  const [error, setError] = useState<string>("");
 
   const assignRoles = () => {
-    setError('')
+    setError("");
 
-    const result = assignRolesUtil(cars, travelers)
+    const result = assignRolesUtil(cars, travelers);
 
     if (result.hasError) {
-      setError(result.message)
-      return
+      setError(result.message);
+      return;
     }
 
-    setAssignments(result.assignments)
-  }
+    setAssignments(result.assignments);
+  };
 
   const reset = () => {
-    setCars([])
-    setTravelers([])
-    setAssignments(null)
-    setError('')
-  }
+    setCars([]);
+    setTravelers([]);
+    setAssignments(null);
+    setError("");
+  };
 
   return (
     <div className="app">
@@ -64,7 +64,7 @@ function App() {
         />
       )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

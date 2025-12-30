@@ -24,12 +24,14 @@ Road Roulette app automatically generates random seat assignments, making the pr
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/staceyng/roadroulette.git
 cd roadroulette
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -37,6 +39,7 @@ npm install
 ## How to Run
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -46,11 +49,13 @@ The app will be available at `http://localhost:5173` (or the port shown in your 
 ## Build for Production
 
 To create a production build:
+
 ```bash
 npm run build
 ```
 
 To preview the production build:
+
 ```bash
 npm run preview
 ```
@@ -62,21 +67,25 @@ This project includes comprehensive unit tests for the core assignment logic.
 ### Run Tests
 
 Run tests in watch mode:
+
 ```bash
 npm test
 ```
 
 Run tests once:
+
 ```bash
 npm test -- --run
 ```
 
 Run tests with UI:
+
 ```bash
 npm run test:ui
 ```
 
 Run tests with coverage report:
+
 ```bash
 npm run test:coverage
 ```
@@ -84,6 +93,7 @@ npm run test:coverage
 ### Test Coverage
 
 The test suite includes 16 unit tests covering:
+
 - Assignment validation (cars, travelers, drivers, capacity)
 - Driver and navigator assignment logic
 - Passenger distribution across multiple cars
