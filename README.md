@@ -1,16 +1,63 @@
-# React + Vite
+# Road Roulette
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quick and fun way to assign seats for different cars during road trips.Road Roulette handles the randomization for you!
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Road Roulette app automatically generates random seat assignments, making the process faster and more efficient.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Automatic Assignments**: Instantly generate random seat assignments for multiple cars
+- **Re-shuffling**: Don't like the current arrangement? Re-shuffle with a single click
+- Fast and intuitive interface
+- Perfect for group road trips with multiple vehicles
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- ESLint
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/staceyng/roadroulette.git
+cd roadroulette
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## How to Run
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (or the port shown in your terminal).
+
+## Build for Production
+
+To create a production build:
+```bash
+npm run build
+```
+
+To preview the production build:
+```bash
+npm run preview
+```
+
+## Future Improvements
+
+- Add ability to save favorite seat configurations
+- Support for custom seat naming/labeling
+- Option to lock certain passengers to specific cars
+- History of previous assignments
+- Export/share assignments with the group
+- Support for seat preferences and constraints
