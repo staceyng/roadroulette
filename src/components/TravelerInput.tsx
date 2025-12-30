@@ -77,7 +77,7 @@ function TravelerInput({ travelers, setTravelers }: TravelerInputProps) {
             Can drive
           </label>
         </div>
-        <button onClick={addTraveler} className="add-button">+ Add Traveler</button>
+        <button onClick={addTraveler} className="add-button">+ Add traveler</button>
       </div>
 
       {travelers.length > 0 && (

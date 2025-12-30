@@ -55,7 +55,7 @@ function CarInput({ cars, setCars }: CarInputProps) {
             onChange={(e) => setCapacity(Number(e.target.value))}
           />
         </div>
-        <button onClick={addCar} className="add-button">+ Add Car</button>
+        <button onClick={addCar} className="add-button">+ Add car</button>
       </div>
 
       {cars.length > 0 && (

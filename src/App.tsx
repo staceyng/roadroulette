@@ -47,7 +47,7 @@ function App() {
 
           <div className="action-buttons">
             <button onClick={assignRoles} className="primary-button">
-              🎲 Assign Roles
+              🎲 Assign roles
             </button>
             {(cars.length > 0 || travelers.length > 0) && (
               <button onClick={reset} className="secondary-button">
