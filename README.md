@@ -17,6 +17,8 @@ Road Roulette app automatically generates random seat assignments, making the pr
 
 - React
 - Vite
+- TypeScript
+- Vitest (Unit Testing)
 - ESLint
 
 ## Installation
@@ -52,6 +54,41 @@ To preview the production build:
 ```bash
 npm run preview
 ```
+
+## Testing
+
+This project includes comprehensive unit tests for the core assignment logic.
+
+### Run Tests
+
+Run tests in watch mode:
+```bash
+npm test
+```
+
+Run tests once:
+```bash
+npm test -- --run
+```
+
+Run tests with UI:
+```bash
+npm run test:ui
+```
+
+Run tests with coverage report:
+```bash
+npm run test:coverage
+```
+
+### Test Coverage
+
+The test suite includes 16 unit tests covering:
+- Assignment validation (cars, travelers, drivers, capacity)
+- Driver and navigator assignment logic
+- Passenger distribution across multiple cars
+- Edge cases (children-only scenarios, single driver, etc.)
+- Randomization functionality
 
 ## Future Improvements
 
